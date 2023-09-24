@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre&family=Josefin+Sans&display=swap');
+
+/* Global */
+:root {
+  --primary: #f7c32e;
+  /* --secondary: #00B895; */
+  --secondary: #f7c32e;
+  --bg: white;
+  --bg-drag: #8b152d;
+  --bg-drag2: #6aba5e34;
+
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.footer {
+  background: var(--bg);
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ECFFDC;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(161, 161, 161);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(104, 104, 104);
+}
+
+/* Custom Selection color */
+::selection {
+  color: inherit;
+  background: rgba(125, 125, 125, 0.164);
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  position: fixed !important;
+  background-color: #ecffdc6e;
+  backdrop-filter: blur(30px);
+  color: var(--black);
+  min-width: 50px;
+  font-family: 'Josefin Sans', sans-serif !important;
+  z-index: 10;
+}
+
+.nav-link {
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease-in-out !important;
+  color: var(--secondary) !important;
+}
+
+.nav-link:hover {
+  transform: scale(1.08);
+}
+
+/* Utilities */
+
+/* Custom Buttons */
+.btn-main {
+  background-color: var(--primary) !important;
+  border: none;
+  border-radius: 20px !important;
+  padding: 12px 20px !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn-main:hover,
+.btn-main:focus,
+.btn-main:active {
+  transform: scale(1.1);
+}
+
+.btn-red {
+  background-color: #8b152d !important;
+  color: #fff !important;
+  border: none;
+  border-radius: 20px !important;
+  padding: 12px 20px !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
+  transform: scale(1.1);
+}
+
+.btn-grey {
+  border: 1px solid #96969672 !important;
+  border-radius: 20px !important;
+  padding: 12px 20px !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.btn-grey:hover,
+.btn-grey:focus,
+.btn-grey:active {
+  background-color: #9696961f !important;
+  transform: scale(1.1);
+}
+
+/* How it works - icons */
+.work-icon {
+  background-color: #eecc6f;
+  padding: 10px 20px 17px 20px;
+  color: #000;
+  font-size: 2rem;
+  margin: 0 1rem;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Custom Text */
+.text-pri {
+  color: var(--primary) !important;
+}
+
+.text-second {
+  color: var(--secondary) !important;
+}
+
+.text-bg {
+  color: var(--bg) !important;
+}
+
+/* Other */
+.bg {
+  background-color: var(--bg) !important;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* Some Utility Page CSS */
+.header {
+  min-height: 80vh;
+}
+
+.about {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: var(--bg);
+}
+
+.error-page {
+  min-height: calc(100vh - 90px);
+  background: var(--bg);
+}
+
+/* Try Me Page */
+.try-me {
+  padding-top: 100px;
+  background: var(--bg);
+  min-height: calc(100vh - 90px);
+}
+
+.drop-icon {
+  font-size: 50px;
+  color: #4f5748;
+  transition: all 0.3s ease-in-out;
+}
+
+.image-preview {
+  border: 3px dashed #777;
+  border-radius: 20px;
+  padding: 15px 30px;
+}
